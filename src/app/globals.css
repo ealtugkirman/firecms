@@ -31,3 +31,86 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 33px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #ff0000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(10px);
+}
+
+
+.hamburger-bottom { transform: translateY(20px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+
+/* CSS dosyanıza ekleyin veya uygun bir yere yerleştirin */
+@layer components {
+  .underline-y-half {
+    position: relative;
+  }
+
+  .underline-y-half::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* opacity: 0.5; */
+    z-index: -1;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    width: 100%;
+    height: 20px; /* Alt çizginin kalınlığını ayarlayabilirsiniz */
+    background-color: #69fab4; /* Alt çizginin rengini istediğiniz gibi ayarlayabilirsiniz */
+  }
+}
+
+.placeholder-left-align::placeholder {
+  text-align: left;
+}
+
+
+/* CSS classes for selected and unselected tabs */
+.selected-tab {
+  background-color: #12182b; /* Change this to your desired color */
+  color: #ffffff; /* Change this to your desired text color */
+}
+
+.unselected-tab {
+  background-color: #e0e0e0; /* Change this to your desired color */
+  color: #000000; /* Change this to your desired text color */
+}

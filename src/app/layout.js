@@ -1,7 +1,27 @@
-import { Inter } from "next/font/google";
+import { Inter, Manrope, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Layout/Footer";
+import Header from "@/components/Layout/Header";
+import { cx } from "../utils/index";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-in",
+});
+
+const worksans = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-mr",
+});
+
+const garamond = Cormorant_Garamond({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-cg",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +31,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cx(inter.variable, worksans.variable, garamond.variable)}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
