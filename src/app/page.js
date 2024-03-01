@@ -9,7 +9,7 @@ import Cta from "@/components/Cta";
 
 export default function Home() {
   return (
-    <main className="bg-first font-in h-full">
+    <main className="font-in h-full">
       <Hero />
       <HeroSecond />
       <Scroll />

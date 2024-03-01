@@ -48,7 +48,7 @@ const Team = () => {
           molestias tempora reiciendis? Ullam dolores veritatis dignissimos
           reiciendis eum alias eligendi quaerat illo ea veniam.
         </p>
-        <div className="mt-4">
+        <div>
           <TabsSection />
         </div>
       </div>

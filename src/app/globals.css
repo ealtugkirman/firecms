@@ -106,11 +106,12 @@ body {
 
 /* CSS classes for selected and unselected tabs */
 .selected-tab {
-  background-color: #12182b; /* Change this to your desired color */
-  color: #ffffff; /* Change this to your desired text color */
+  background-color: #ffffff; /* Change this to your desired color */
+  color: #030303; /* Change this to your desired text color */
 }
 
 .unselected-tab {
   background-color: #e0e0e0; /* Change this to your desired color */
   color: #000000; /* Change this to your desired text color */
 }
+

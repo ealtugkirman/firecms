@@ -17,13 +17,13 @@ export default function TabsSection() {
       >
         <Tab
           className={`mr-12 text-xl font-semibold rounded-xl ${
-            selected === "photos" ? "selected-tab" : "unselected-tab"
+            selected === "photos" ? "text-red-500 " : "unselected-tab"
           }`}
           key="photos"
           title="Photos"
         >
           <Card>
-            <CardBody className="text-lg text-first bg-light pt-3  font-light">
+            <CardBody className="text-lg text-first my-4 bg-light  font-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -33,13 +33,13 @@ export default function TabsSection() {
         </Tab>
         <Tab
           className={`mr-12 text-xl font-semibold rounded-xl ${
-            selected === "music" ? "selected-tab" : "unselected-tab"
+            selected === "music" ? "text-red-500 " : "unselected-tab"
           }`}
           key="music"
           title="Music"
         >
           <Card>
-            <CardBody className="text-lg text-first bg-light pt-3  font-light">
+            <CardBody className="text-lg text-first my-4 bg-light  font-light">
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -49,13 +49,13 @@ export default function TabsSection() {
         </Tab>
         <Tab
           className={`text-xl font-semibold rounded-xl ${
-            selected === "videos" ? "selected-tab" : "unselected-tab"
+            selected === "videos" ? "text-red-500 " : "unselected-tab"
           }`}
           key="videos"
           title="Videos"
         >
           <Card>
-            <CardBody className="text-lg text-first bg-light pt-3 font-light">
+            <CardBody className="text-lg text-first my-4 bg-light font-light">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
             </CardBody>

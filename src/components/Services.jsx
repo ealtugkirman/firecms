@@ -4,7 +4,7 @@ import { FaGavel, FaFileAlt, FaBalanceScale } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <div className="flex flex-col text-center space-y-6 py-20 items-center justify-center mx-32 bg-first text-light">
+    <div className="flex flex-col text-center space-y-6 py-20 items-center justify-center px-32 bg-first text-light">
       <h3 className="text-5xl mx-24 capitalize font-bold">
         Legal Services We Provide
       </h3>
