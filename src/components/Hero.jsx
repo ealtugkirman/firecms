@@ -1,29 +1,87 @@
 "use client";
+import React from "react";
+import Lawyer from "../../public/LawyerPlaceholder.jpg";
 import Image from "next/image";
-import Lawyer from "../../public/PlaceHolderLawyer.json";
 import Lottie from "lottie-react";
+import Terazi from "../../public/adalet.json";
+
+// const Hero = () => {
+//   return (
+//     <div className=" pt-24 md:pt-0 md:pl-24 h-screen items-center justify-center grid grid-cols-1 bg-light text-first md:grid-cols-2 grid-rows-2 md:grid-rows-1 ">
+//       <div className="grid-cols-1 grid-rows-1 space-y-8">
+//         <h1 className=" text-xl md:text-3xl lg:text-5xl ">
+//           YERİNDE VE GÜÇLÜ HİZMET KARARLI VE ETKİLİ ÇÖZÜMLER
+//           {/* Yerinde ve Güçlü Hizmet <br/> Karalı ve Etkili Çözümler */}
+//         </h1>
+//         <p className="text-xl">
+//           Atila Hukuk & Danışmanlık yerinde ve etkili hizmet vizyonu ile
+//           kurulmuş, hukuki hizmetlerde doğrudanlık esası ile yerli ve yabancı
+//           müvekkillerine çeşitli hukuk alanlarında hizmet veren bir hukuk
+//           bürosudur.
+//         </p>
+//         <button className="bg-first rounded-2xl text-xl text-light px-4 py-2">
+//           Bize Ulaşın
+//         </button>
+//       </div>
+//       <div className="grid-cols-1 grid-rows-1">
+//         <div>
+//           <Lottie animationData={Terazi} style={{ objectFit: "contain" }} />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row  md:px-32  md:pt-32 bg-light text-first ">
-      <div className="flex space-y-8 leading-10 my-24 items-start   text-5xl flex-col w-1/2">
-        <p className="font-bold">
-          Lorem ipsum dolor sit amet. <br /> Nisi nulla
-          <br />
-          <span className="underline-y-half z-10">dignissimos temporibus!</span>
-        </p>
-        <p className="text-lg opacity-70">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          eos, ipsa beatae sunt possimus consequatur non harum deleniti
-          similique placeat quae cumque iste blanditiis, provident corporis!
-          Quo, libero adipisci. Tempore, blanditiis accusantium.
-        </p>
-        <button className="bg-first text-xl  px-4 py-2 rounded-xl text-light">
-          {" "}
-          Contact Us
-        </button>
+    <div className="relative bg-light font-gs flex flex-col-reverse py-24  lg:flex-col ">
+      <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+        <svg
+          className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
+          viewBox="0 0 100 100"
+          fill="currentColor"
+          preserveAspectRatio="none slice">
+          <path d="M50 0H100L50 100H0L50 0Z" />
+        </svg>
+        <img
+          className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+          src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          alt=""
+        />
       </div>
-      <div className="flex  w-1/2">
-        <Lottie animationData={Lawyer} />
+      <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+        <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+            Atila Hukuk ve Danışmanlık
+          </p>
+          <h2 className="mb-5 font-gs capitalize text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            YERİNDE GÜÇLÜ HİZMET
+            <br className="hidden md:block" />
+            KARARLI VE ETKİLİ{" "}
+            <span className="inline-block text-deep-purple-accent-400">
+              ÇÖZÜMLER
+            </span>
+          </h2>
+          <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+            Atila Hukuk & Danışmanlık yerinde ve etkili hizmet vizyonu ile
+           kurulmuş, hukuki hizmetlerde doğrudanlık esası ile yerli ve yabancı
+           müvekkillerine çeşitli hukuk alanlarında hizmet veren bir hukuk
+           bürosudur.
+          </p>
+          <div className="flex items-center">
+            <a
+              href="/"
+              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide bg-first text-white hover:bg-red-700 transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none">
+           Bize Ulasın
+            </a>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-red-500">
+              Yazılarımız
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

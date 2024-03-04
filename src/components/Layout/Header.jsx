@@ -72,10 +72,10 @@ const Header = () => {
     <div className="fixed z-40 top-0 w-full">
       <div
         id="navbar"
-        className={`flex bg-first font-cg flex-col ${
+        className={`flex bg-first font-gs flex-col ${
           isScrolled ? "py-0" : "py-0"
         } ${isScrolled ? "lg:py-3" : "lg:py-3"}`}>
-        <div className="text-dark dark:text-light mx-32 items-center bg-first justify-between hidden lg:flex flex-row ">
+        <div className="text-light mx-32 items-center bg-first justify-between hidden lg:flex flex-row ">
           <div className=" items-center space-x-4  text-2xl flex">
             <Link className="" href="/">
               <Image
@@ -86,7 +86,7 @@ const Header = () => {
               />
             </Link>
           </div>
-          <div className=" space-x-6  mr-8 flex">
+          <div className=" space-x-6  text-light mr-8 flex">
             <span className="hover:scale-110 duration-500">
               <Link href="/">Ana Sayfa</Link>
             </span>
@@ -139,7 +139,7 @@ const Header = () => {
         <div
           id="menu"
           ref={menuRef}
-          className="fixed font-myfont dark:bg-dark  bg-light z-30 top-0 bottom-0 left-0 flex-col text-center hidden lg:hidden w-2/3 min-h-screen py-1 pt-40 space-y-4 text-xl dark:text-light text-dark">
+          className="fixed dark:bg-dark  bg-light z-30 top-0 bottom-0 left-0 flex-col text-center hidden lg:hidden w-2/3 min-h-screen py-1 pt-40 space-y-4 text-xl dark:text-light text-dark">
           <div className="absolute" />
           <div className="relative space-y-6 justify-center mx-auto flex-col flex">
             <span>

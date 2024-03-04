@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         first: "#12182b",
-        light: "#fff",
+        light: "#ffffff",
         second: "#69fab4",
         third: "#ffc700",
         four: "#e7ecff",
@@ -17,7 +17,9 @@ module.exports = {
       fontFamily: {
         mr: ["var(--font-mr)"],
         in: ["var(--font-in)"],
-        cg: ["var(--font-cg)"]
+        cg: ["var(--font-cg)"],
+        gs: ['Cormorant Garamond', 'serif'],
+
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

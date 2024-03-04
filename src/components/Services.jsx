@@ -4,58 +4,155 @@ import { FaGavel, FaFileAlt, FaBalanceScale } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <div className="flex flex-col text-center space-y-6 py-20 items-center justify-center px-32 bg-first text-light">
-      <h3 className="text-5xl mx-24 capitalize font-bold">
-        Legal Services We Provide
-      </h3>
-      <p className="mx-32 text-lg pb-4">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        illum harum consequuntur nesciunt doloribus officiis. Corrupti, commodi.
-        Iusto, neque tempore cum corporis facere voluptatem voluptates nulla?
-      </p>
-      <div className="grid gap-8  grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2">
-        <ServiceCard
-          title={"Criminal Defense"}
-          desc={
-            "Our experienced team of lawyers specializes in criminal defense. We defend clients facing charges ranging from misdemeanors to serious felonies. We provide personalized legal strategies and represent your interests in court. Your rights and freedom are our top priority."
-          }
-          icon={<FaGavel />}
-        />
-        <ServiceCard
-          title={"Legal Consultation"}
-          desc={
-            "Do you have legal questions or concerns? Our legal consultation service is here to help. Our attorneys are available to provide expert advice and guidance on a wide range of legal matters. Schedule a consultation today to discuss your legal needs."
-          }
-          icon={<FaFileAlt />}
-        />
-        <ServiceCard
-          title={"Civil Litigation"}
-          desc={
-            "In cases of civil disputes and litigation, our legal team is here to represent your interests. We handle a variety of civil cases, including contract disputes, personal injury claims, and more. Our goal is to achieve the best possible outcome for our clients through negotiation or litigation."
-          }
-          icon={<FaBalanceScale />}
-        />
-        <ServiceCard
-          title={"Legal Consultation"}
-          desc={
-            "Do you have legal questions or concerns? Our legal consultation service is here to help. Our attorneys are available to provide expert advice and guidance on a wide range of legal matters. Schedule a consultation today to discuss your legal needs."
-          }
-          icon={<FaFileAlt />}
-        />
-        <ServiceCard
-          title={"Civil Litigation"}
-          desc={
-            "In cases of civil disputes and litigation, our legal team is here to represent your interests. We handle a variety of civil cases, including contract disputes, personal injury claims, and more. Our goal is to achieve the best possible outcome for our clients through negotiation or litigation."
-          }
-          icon={<FaBalanceScale />}
-        />{" "}
-        <ServiceCard
-          title={"Civil Litigation"}
-          desc={
-            "In cases of civil disputes and litigation, our legal team is here to represent your interests. We handle a variety of civil cases, including contract disputes, personal injury claims, and more. Our goal is to achieve the best possible outcome for our clients through negotiation or litigation."
-          }
-          icon={<FaBalanceScale />}
-        />
+    <div className="px-4 py-16 mx-auto bg-light text-first  md:px-24 lg:px-8 lg:py-20">
+      <div className="grid row-gap-8 sm:row-gap-0 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="p-8 border-b sm:border-r">
+          <div className="max-w-md text-center">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
+              <svg
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">The quick fox</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium rem aperiam, eaque ipsa quae. Sit error voluptatem.
+            </p>
+          </div>
+        </div>
+        <div className="p-8 border-b lg:border-r">
+          <div className="max-w-md text-center">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
+              <svg
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">Leverage agile</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Storage shed, troughs feed bale manure, is garden wheat oats at
+              augers. Bulls at rose garden cucumbers mice sunflower wheat in
+              pig.
+            </p>
+          </div>
+        </div>
+        <div className="p-8 border-b sm:border-r lg:border-r-0">
+          <div className="max-w-md text-center">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
+              <svg
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">Organically grow</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium rem aperiam, eaque ipsa quae. Sit error voluptatem.
+            </p>
+          </div>
+        </div>
+        <div className="p-8 border-b lg:border-b-0 lg:border-r">
+          <div className="max-w-md text-center">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
+              <svg
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">Have a good one</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Storage shed, troughs feed bale manure, is garden wheat oats at
+              augers. Bulls at rose garden cucumbers mice sunflower wheat in
+              pig.
+            </p>
+          </div>
+        </div>
+        <div className="p-8 border-b sm:border-b-0 sm:border-r">
+          <div className="max-w-md text-center">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
+              <svg
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">Trough pomfret</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium rem aperiam, eaque ipsa quae. Sit error voluptatem.
+            </p>
+          </div>
+        </div>
+        <div className="p-8">
+          <div className="max-w-md text-center">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
+              <svg
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="mb-2 font-semibold leading-5">Disrupt inspire</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Storage shed, troughs feed bale manure, is garden wheat oats at
+              augers. Bulls at rose garden cucumbers mice sunflower wheat in
+              pig.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

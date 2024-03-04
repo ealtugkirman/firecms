@@ -9,12 +9,12 @@ import Cta from "@/components/Cta";
 
 export default function Home() {
   return (
-    <main className="font-in h-full">
+    <main className="font-gs h-full">
       <Hero />
       <HeroSecond />
       <Scroll />
-      <Team />
       <Services />
+      <Team />
       <Crew />
       <Cta />
     </main>
