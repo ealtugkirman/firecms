@@ -2,10 +2,11 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import HeroSecond from "@/components/HeroSecond";
 import Scroll from "../components/Scroll"
-import Team from "@/components/Team";
+import Team from "@/components/BlogSection";
 import Services from "@/components/Services";
 import Crew from "@/components/Crew";
 import Cta from "@/components/Cta";
+import BlogSection from "@/components/BlogSection";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <HeroSecond />
       <Scroll />
       <Services />
-      <Team />
+      <BlogSection />
       <Crew />
       <Cta />
     </main>

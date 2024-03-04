@@ -54,7 +54,7 @@ const Cta = () => {
   };
 
   return (
-    <div className="bg-light text-light flex items-center justify-center py-16">
+    <div className="bg-light text-light flex items-center justify-center py-16 pb-32">
       <div className="flex py-12 flex-col bg-first items-center justify center  rounded-3xl h-96 w-11/12">
         <h3 className="font-semibold text-4xl mb-8 mt-4">
           Lorem ipsum dolor sit amet consectetur.

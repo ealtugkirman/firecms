@@ -4,8 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { cx } from "../../utils/index";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 import Logo from "../../../public/atilaLogo.svg";
 
@@ -69,7 +68,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="fixed z-40 top-0 w-full">
+    <div className="fixed z-40 font-gs  top-0 w-full">
       <div
         id="navbar"
         className={`flex bg-first font-gs flex-col ${
@@ -91,13 +90,10 @@ const Header = () => {
               <Link href="/">Ana Sayfa</Link>
             </span>
             <span className="hover:scale-110 duration-500">
-              <Link href="/hakkimizda">Hakkımızda</Link>
+              <Link href="/about">Hakkımızda</Link>
             </span>
-            {/* <span className="hover:scale-110 duration-500">
-              <Link href="/latestnews">Latest News</Link>
-            </span> */}
             <span className="hover:scale-110 duration-500">
-              <Link href="/about">Hizmet Alanlarımız</Link>{" "}
+              <Link href="/services">Hizmet Alanlarımız</Link>{" "}
             </span>
             <span className="hover:scale-110 duration-500">
               {" "}
@@ -116,10 +112,15 @@ const Header = () => {
       </div>
       {/* Hamburger Menu */}
       <div className="flex md:flex-row items-center justify-evenly">
-        <div className="flex z-50 fixed justify-between px-8 bg-light dark:bg-dark items-center min-w-full  lg:hidden pt-20 ">
-          <div className="mt-2 flex py-2 items-center text-dark dark:text-light ">
+        <div className="flex z-50 fixed justify-between px-8 bg-first  text-first items-center min-w-full  lg:hidden pt-20 ">
+          <div className="mt-2 flex py-2 items-center bg-first text-light ">
             <Link href="/">
-              <Image src={Logo} width={140} height={70} alt="cognitive.com" />
+              <Image
+                src={Logo}
+                width={140}
+                height={70}
+                alt="Atila Hukuk ve Danışmanlık"
+              />
             </Link>
           </div>
           <div className="lg:hidden flex items-center  space-x-6">
@@ -139,31 +140,30 @@ const Header = () => {
         <div
           id="menu"
           ref={menuRef}
-          className="fixed dark:bg-dark  bg-light z-30 top-0 bottom-0 left-0 flex-col text-center hidden lg:hidden w-2/3 min-h-screen py-1 pt-40 space-y-4 text-xl dark:text-light text-dark">
+          className="fixed   bg-first text-light z-30 top-0 bottom-0 left-0 flex-col text-center hidden lg:hidden w-2/3 min-h-screen py-1 pt-40 space-y-4 text-xl ">
           <div className="absolute" />
           <div className="relative space-y-6 justify-center mx-auto flex-col flex">
             <span>
-              <Link href="/">Home</Link>
+              <Link href="/">Ana sayfa</Link>
             </span>
             <span>
-              <Link href="/categories/all">Categories</Link>
+              <Link href="/about">Hakkımızda</Link>
             </span>
             {/* <span>
               <Link href="/latestnews">Latest News</Link>
             </span> */}
             <span>
-              <Link href="/about">About Us</Link>{" "}
+              <Link href="/services">Hizmet Alanlarımız</Link>{" "}
             </span>
             <span>
-              <Link href="/privacypolicy">Privacy Policy</Link>{" "}
+              <Link href="/blog">Blog</Link>{" "}
+            </span>
+            <span>
+              <Link href="/contact">Bize Ulaşın</Link>{" "}
             </span>
           </div>
-          <p className="dark:text-light leading-6 text-black text-left text-sm mx-8 pt-10">
-            Your best friend on this voyage <br />
-            Here is the best finance & crypto blog. <br />
-            Say hello to us and start to explore :)
-          </p>
-          <div className="flex text-dark dark:text-light text-2xl flex-row space-x-6 pt-6 justify-center">
+
+          <div className="flex text-light text-2xl flex-row space-x-6 pt-6 justify-center">
             <a
               href="https://twitter.com/AltcoinVoyage"
               aria-label="Twitter Link">
@@ -172,8 +172,14 @@ const Header = () => {
             <a
               href="https://www.instagram.com/altcoin_voyage/"
               aria-label="Twitter Link"
-              className="dark:text-white text-dark">
+              className="text-light">
               <FaInstagram />
+            </a>
+            <a
+              href="https://www.instagram.com/altcoin_voyage/"
+              aria-label="Twitter Link"
+              className="text-light">
+              <FaLinkedin />
             </a>
           </div>
         </div>

@@ -6,12 +6,15 @@ const Crew = () => {
   return (
     <div className="px-4 py-16 mx-auto bg-light text-first  md:px-24 lg:px-8 lg:py-20">
       <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
-        <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-          Know Our Team
+        <p className="inline-block text-2xl md:text-4xl lg:text-5xl px-3  mb-4 font-semibold tracking-wider text-first uppercase rounded-full">
+          Ekibimizle tanışın
         </p>
         <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium.
+          Atila Hukuk Bürosu olarak her zaman ekibimizde profesyonel gelişime
+          açık olan takım arkadaşlarımızla yol alıyoruz. Hem Türkçe hem
+          İngilizce olarak kendini geliştiren, görevlerine bağlı, yeni kavramlar
+          öğrenmeye açık ekibimiz size en iyi danışmanlığı vermek için
+          buradadır.
         </p>
       </div>
       <div className="grid gap-10 mx-auto lg:grid-cols-2 lg:max-w-screen-lg">
@@ -24,10 +27,10 @@ const Crew = () => {
             />
           </div>
           <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-            <p className="text-lg font-bold">Oliver Aguilerra</p>
-            <p className="mb-4 text-xs text-gray-800">Product Manager</p>
+            <p className="text-lg font-bold">Ahmet Atila</p>
+            <p className="mb-4 text-xs text-gray-800">Avukat</p>
             <p className="mb-4 text-sm tracking-wide text-gray-800">
-              Vincent Van Gogh’s most popular painting, The Starry Night.
+              Kurucu Ortak{" "}
             </p>
             <div className="flex items-center space-x-3">
               <a
@@ -56,10 +59,10 @@ const Crew = () => {
             />
           </div>
           <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-            <p className="text-lg font-bold">Marta Clermont</p>
-            <p className="mb-4 text-xs text-gray-800">Design Team Lead</p>
+            <p className="text-lg font-bold">Yasir Gözalan</p>
+            <p className="mb-4 text-xs text-gray-800">Avukat</p>
             <p className="mb-4 text-sm tracking-wide text-gray-800">
-              Amet I love liquorice jujubes pudding croissant I love pudding.
+              İstanbul Bölge Sorumlusu
             </p>
             <div className="flex items-center space-x-3">
               <a
@@ -88,11 +91,10 @@ const Crew = () => {
             />
           </div>
           <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-            <p className="text-lg font-bold">Alice Melbourne</p>
-            <p className="mb-4 text-xs text-gray-800">Human Resources</p>
+            <p className="text-lg font-bold">Emre Balcı</p>
+            <p className="mb-4 text-xs text-gray-800">Sigorta Uzmanı</p>
             <p className="mb-4 text-sm tracking-wide text-gray-800">
-              Lorizzle ipsum bling bling sit amizzle, consectetuer adipiscing
-              elit.
+              Sigorta Uzmanı
             </p>
             <div className="flex items-center space-x-3">
               <a
@@ -121,11 +123,10 @@ const Crew = () => {
             />
           </div>
           <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-            <p className="text-lg font-bold">John Doe</p>
+            <p className="text-lg font-bold">Emre Altug Kırman</p>
             <p className="mb-4 text-xs text-gray-800">Good guy</p>
             <p className="mb-4 text-sm tracking-wide text-gray-800">
-              Bacon ipsum dolor sit amet salami jowl corned beef, andouille
-              flank.
+             Teknoloji ve IT Sorumlusu
             </p>
             <div className="flex items-center space-x-3">
               <a
