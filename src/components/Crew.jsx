@@ -4,7 +4,7 @@ import React from "react";
 
 const Crew = () => {
   return (
-    <div className="px-4 py-16 mx-auto bg-light text-first  md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-16 pb-24 mx-auto bg-light text-first  md:px-24 lg:px-8 lg:py-32">
       <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
         <p className="inline-block text-2xl md:text-4xl lg:text-5xl px-3  mb-4 font-semibold tracking-wider text-first uppercase rounded-full">
           Ekibimizle tanışın

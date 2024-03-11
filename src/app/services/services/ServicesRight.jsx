@@ -1,88 +1,95 @@
 "use client";
+
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-<FaArrowRight />;
 
-const Content = ({ section }) => {
-  return (
-    <div>
-      {section === "Law Service" && <p>hello</p>}
-      {section === "Another Law Service" && <p>Section 2 Content</p>}
-      {section === "Another Service" && <p>Section 3 Content</p>}
-      {section === "Law" && <p>Section 1 Content</p>}
-      {section === "Digital Law Service" && <p>Section 2 Content</p>}
-      {section === "Another one Service" && <p>Section 3 Content</p>}
-    </div>
-  );
-};
+const services = [
+  {
+    title: "Ticari ve Kurumsal Danışmanlık",
+    content: "Hello",
+  },
+  {
+    title: "İcra ve İflas Yönetimi",
+    content: "Section 2 Content",
+  },
+  {
+    title: "İş Hukuku",
+    content: "Section 3 Content",
+  },
+  {
+    title: "Teknoloji ve StartUp Hukuku",
+    content: "Section 1 Content",
+  },
+  {
+    title: "Yatırım Hukuku",
+    content: "Section 2 Content",
+  },
+  {
+    title: "Şirketler Hukuku",
+    content: "Section 3 Content",
+  },
+  {
+    title: "UluslarArası Ticaret ve Tahkim",
+    content: "Section 1 Content",
+  },
+  {
+    title: "Sigorta Hukuku",
+    content: "Section 2 Content",
+  },
+  {
+    title: "Kira Hukuku",
+    content: "Section 3 Content",
+  },
+];
 
-const Sidebar = ({ onSelectSection }) => {
+const Sidebar = ({ services, onSelectSection }) => {
   return (
-    <div className="flex flex-col bg-slate-100 rounded-3xl p-5 text-first">
-      <p className="text-2xl mb-4">Hizmetlerimiz</p>
-      <ul className="space-y-4 ">
-        <div className="flex flex-row border pr-4 justify-between hover:bg-first duration-1000 hover:text-light bg-light pl-3 items-center  py-3 font-semibold rounded-lg">
-          <li
-            className=" pr-20 "
-            onClick={() => onSelectSection("Law Service")}>
-            Law Service
-          </li>
-          <FaArrowRight />
-        </div>
-        <div className="flex flex-row border pr-4 justify-between hover:bg-first duration-1000 hover:text-light bg-light pl-3 items-center  12 py-3 font-semibold rounded-lg">
-          <li
-            className=" "
-            onClick={() => onSelectSection("Another Law Service")}>
-            Another Law Service
-          </li>
-          <FaArrowRight />
-        </div>
-        <div className="flex flex-row border pr-4 justify-between hover:bg-first duration-1000 hover:text-light bg-light pl-3 items-center  12 py-3 font-semibold rounded-lg">
-          <li
-            className=" pr-20 "
-            onClick={() => onSelectSection("Another Service")}>
-            Another Service
-          </li>
-          <FaArrowRight />
-        </div>
-        <div className="flex flex-row border pr-4 justify-between hover:bg-first duration-1000 hover:text-light bg-light pl-3 items-center   py-3 font-semibold rounded-lg">
-          <li className=" pr-20 " onClick={() => onSelectSection("Law")}>
-            Law
-          </li>
-          <FaArrowRight />
-        </div>
-        <div className="flex flex-row border pr-4 justify-between hover:bg-first duration-1000 hover:text-light bg-light pl-3 items-center   py-3 font-semibold rounded-lg">
-          <li
-            className=" "
-            onClick={() => onSelectSection("Digital Law Service")}>
-            Digital Law Service
-          </li>
-          <FaArrowRight />
-        </div>
-        <div className="flex flex-row border pr-4 justify-between hover:bg-first duration-1000 hover:text-light bg-light pl-3 items-center   py-3 font-semibold rounded-lg">
-          <li
-            className=" "
-            onClick={() => onSelectSection("Another one Service")}>
-            Another one Service
-          </li>
-          <FaArrowRight />
-        </div>
+    <div className="flex bg-light flex-col font-gs border border-black  p-5 text-first">
+      <p className="text-2xl mb-4">Çalışma Alanlarımız</p>
+      <ul className="space-y-4">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="flex flex-row border pr-4 justify-between hover:bg-first duration-1000 hover:text-light pl-3 items-center  py-3 font-semibold "
+            onClick={() => onSelectSection(service.title)}>
+            <li className="pr-20">{service.title}</li>
+            <FaArrowRight />
+          </div>
+        ))}
       </ul>
     </div>
   );
 };
 
+const Content = ({ title, content }) => {
+  return (
+    <div className="flex bg-light flex-col justify-center pt-6 md:pt-0 px-4 md:px-12 lg:px-24 font-gs">
+      <h1 className="text-xl  md:text-2xl  lg:text-4xl " >{title}</h1>
+      <p>{content}</p>
+    </div>
+  );
+};
+
 const ServicesBar = () => {
-  const [currentSection, setCurrentSection] = useState("section1");
+  const [currentSection, setCurrentSection] = useState(
+    "Ticari ve Kurumsal Danışmanlık"
+  );
 
   const handleSelectSection = (section) => {
     setCurrentSection(section);
   };
 
   return (
-    <div className="">
-      <Sidebar onSelectSection={handleSelectSection} />
-      <Content section={currentSection} />
+    <div className="flex bg-light flex-col md:flex-row ">
+      <Sidebar services={services} onSelectSection={handleSelectSection} />
+      <Content
+        title={
+          services.find((service) => service.title === currentSection)?.title
+        }
+        content={
+          services.find((service) => service.title === currentSection)?.content
+        }
+      />
     </div>
   );
 };

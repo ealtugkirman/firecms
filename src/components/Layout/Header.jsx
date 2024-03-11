@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { cx } from "../../utils/index";
+// import { cx } from "../../utils/index";
 import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 import Logo from "../../../public/atilaLogo.svg";
@@ -93,7 +93,7 @@ const Header = () => {
               <Link href="/about">Hakkımızda</Link>
             </span>
             <span className="hover:scale-110 duration-500">
-              <Link href="/services">Hizmet Alanlarımız</Link>{" "}
+              <Link href="/services">Çalışma Alanlarımız</Link>{" "}
             </span>
             <span className="hover:scale-110 duration-500">
               {" "}
@@ -103,7 +103,7 @@ const Header = () => {
 
           <div className="flex flex-row text-blue-500 text-2xl items-center space-x-4  ">
             <div
-              className="bg-second font-semibold animation-pulse hover:scale-110 duration-500 text-lg text-first rounded-xl px-4 py-2"
+              className="bg-light font-semibold animation-pulse hover:scale-110 duration-500 text-lg text-first rounded-xl px-4 py-2"
               aria-label="Toggle Menu">
               <Link href="/contact">Bize Ulaşın</Link>
             </div>
@@ -153,7 +153,7 @@ const Header = () => {
               <Link href="/latestnews">Latest News</Link>
             </span> */}
             <span>
-              <Link href="/services">Hizmet Alanlarımız</Link>{" "}
+              <Link href="/services">Çalışma Alanlarımız</Link>{" "}
             </span>
             <span>
               <Link href="/blog">Blog</Link>{" "}

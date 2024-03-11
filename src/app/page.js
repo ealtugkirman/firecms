@@ -17,7 +17,7 @@ export default function Home() {
       <Services />
       <BlogSection />
       <Crew />
-      <Cta />
+      {/* <Cta /> */}
     </main>
   );
 }
