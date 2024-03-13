@@ -27,9 +27,9 @@ const Hero = () => {
             Atila Hukuk ve Danışmanlık
           </p>
           <h2 className="mb-5 font-gs capitalize text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            YERİNDE GÜÇLÜ HİZMET
+            YERİNDE  HİZMET
             <br className="hidden md:block" />
-            KARARLI VE ETKİLİ{" "}
+            ETKİLİ{" "}
             <span className="inline-block text-deep-purple-accent-400">
               ÇÖZÜMLER
             </span>
