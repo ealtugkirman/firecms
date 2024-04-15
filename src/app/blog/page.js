@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { db } from "../../firebaseConfig.js";
 import { getDocs, collection } from "firebase/firestore";
 import Image from "next/image.js";
+import BlogCard from "./components/BlogCard.jsx";
 
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "blog"));
@@ -26,7 +27,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="bg-blue-900 text-white flex h-full flex-col mx-12 items-center justify-center">
+    <div className="bg-blue-900 text-white py-32 flex h-full flex-col mx-12 items-center justify-center">
       {blogData.map((blog) => (
         <div key={blog.id}>
           <p>{blog.name}</p>
@@ -41,7 +42,8 @@ const Page = () => {
             </div>
           ))}
         </div>
-      ))}
+      )) }
+      <BlogCard />
     </div>
   );
 };
